@@ -1,0 +1,112 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  position: relative;
+}
+
+.animatedBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #d14b4b 20%, #0b0d2b 60%, #ffffff 100%);
+  animation: waveMove 10s ease-in-out infinite;
+  z-index: -1;
+}
+
+@keyframes waveMove {
+  0% { transform: translate(-25%, -25%) scale(1); }
+  50% { transform: translate(0%, 0%) scale(1.1); }
+  100% { transform: translate(-25%, -25%) scale(1); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  height: 60px;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #adbfff, #ffe85e);
+}
+
+.navWrapper button {
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menuIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menuIcon div {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  margin: 3px 0;
+  border-radius: 1px;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.headline {
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.highlightWhite {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.highlightYellow {
+  color: #ffc107;
+  font-weight: 800;
+}
+
+.highlightUnderline {
+  color: #ffeb3b;
+  font-weight: 800;
+  text-decoration: underline wavy;
+}
+
+.googleSection img {
+  height: 200px;
+  border-radius: 50%;
+}
